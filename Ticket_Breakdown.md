@@ -47,6 +47,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
     - 30 minutes 
 
     C: Implementation Details
-    - Select all records from the shift table where the facilityId is equals to facilityId that needs the return
+    - Select records from the shift table where the facilityId is equals to facilityId that needs the return
     - Perform a left join on the FacilityAgentTable where facilityId & AgentId is equals to the facilityId & agentId of the shift table 
+    - With the resulting data set , i go on to ensure internal database id is not returned 
 

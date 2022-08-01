@@ -16,3 +16,24 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+1: Ability for  Facilities to save their own custom ids:
+
+    A: Acceptance criteria: 
+    - Each facility must provide the same custom id to the same agent on every shift.
+
+    B: Time/Effort estimate: 
+    - 30 minutes 
+
+    C: Implementation Details
+    - The custom id will follow this format: (facility abbreviation)-(randomId) e:g Nnamdi is an agent who worked at Clipboard health will have facilityAgentId (CBH-0783)
+
+2: Create FacilityAgentTable
+
+    A: Acceptance criteria: 
+    - All facility agent ids must be unique
+
+    B: Time/Effort estimate: 
+    - 30 minutes 
+    C: Implementation Details
+    - Create a table with 3 columns (agentId, facilityId, facilityAgentId)
+    - Ensure returning agents are not given new facility agent ids

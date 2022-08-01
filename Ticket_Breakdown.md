@@ -41,7 +41,7 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 3: Returning the shifts
     A: Acceptance criteria:
-    - All records returned must be owned by the same facility
+    - All records returned must be owned by the same facility that is requesting for the report
 
     B: Time/Effort estimate: 
     - 30 minutes 

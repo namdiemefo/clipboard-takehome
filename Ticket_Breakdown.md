@@ -16,7 +16,7 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
-1: Ability for  Facilities to save their own custom ids:
+1: Facilities to create their own custom ids:
 
     A: Acceptance criteria: 
     - Each facility must provide the same custom id to the same agent on every shift.
@@ -34,6 +34,19 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
     B: Time/Effort estimate: 
     - 30 minutes 
+
     C: Implementation Details
     - Create a table with 3 columns (agentId, facilityId, facilityAgentId)
     - Ensure returning agents are not given new facility agent ids
+
+3: Returning the shifts
+    A: Acceptance criteria:
+    - All records returned must be owned by the same facility
+
+    B: Time/Effort estimate: 
+    - 30 minutes 
+
+    C: Implementation Details
+    - Select all records from the shift table where the facilityId is equals to facilityId that needs the return
+    - Perform a left join on the FacilityAgentTable where facilityId & AgentId is equals to the facilityId & agentId of the shift table 
+
